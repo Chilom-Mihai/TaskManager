@@ -1,0 +1,29 @@
+import CreateTaskForm from "../CreateTaskForm/CreateTaskForm";
+import TaskCard from "../TaskCard/TaskCard";
+import "./ContainerBox.css";
+
+const ContainerBox = () => {
+  return (
+    <div className="container-box">
+      <h1>Tasks</h1>
+      <h4>Your tasks in your space.</h4>
+      <div className="tasks">
+        <TaskCard
+          type="T-1"
+          status="todo"
+          desc="Descriere1"
+          date="24/11/2024"
+        />
+        <TaskCard
+          type="T-2"
+          status="todo"
+          desc="Descriere2"
+          date="04/12/2024"
+        />
+      </div>
+      <CreateTaskForm />
+    </div>
+  );
+};
+
+export default ContainerBox;
